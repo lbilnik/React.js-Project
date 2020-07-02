@@ -74,6 +74,7 @@ class Kalkulator extends React.Component {
     this.setState({ numer: "log"})
     this.setState({ znak: "log"})
   }
+
   kwadrat = () => {
     this.setState({ previousNumber: this.state.input})
     this.setState({ numer: "sqrt"})
@@ -145,12 +146,11 @@ class Kalkulator extends React.Component {
     }
     /*log -----------------------------------------------------------*/
     else if(this.state.numer === "log") {
-      this.setState({input: Math.log(this.state.currentNumber) /
-        Math.log(this.state.previousNumber)
+      this.setState({input: Math.log(inputPreviousNumber) / Math.LN10
+        
       })
-      const inputWynik = Math.log(this.state.currentNumber) /
-      Math.log(this.state.previousNumber)
-      this.setState(state => {const calyWynik = state.calyWynik.concat(`${inputCurrentNumber} ${this.state.znak}( ${inputPreviousNumber} ) = ${inputWynik}`)       
+      const inputWynik = Math.log(inputPreviousNumber) / Math.LN10
+      this.setState(state => {const calyWynik = state.calyWynik.concat(`${this.state.znak}( ${inputPreviousNumber} ) = ${inputWynik}`)       
       return {calyWynik}
     })
     }
