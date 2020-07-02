@@ -1,0 +1,319 @@
+body
+{
+ background-color: #26282E;	
+}
+
+/*
+body
+{
+	margin: 0;
+	background-color: #26282E;
+	color: #209781;
+    font-family: 'Lobster', sans-serif;
+    font-size: 28px;
+}
+
+a:link    { color: #209781; text-decoration: none; }
+a:visited { color: #209781; }
+a:active  { color: #209781; }
+a:hover   { color: #E9B64A; }
+
+h1
+{
+	font-size: 64px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 5px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+p
+{
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	letter-spacing: 2px;
+}
+
+.board
+{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.cardA
+{
+	width: 125px;
+	height: 125px;
+	display: inline-block;
+	margin: 3px;
+	border: 4px solid #e9b64a;
+	border-radius: 4px;
+	cursor: default;
+	filter: brightness(100%);
+	transition: all .3s ease-in-out;
+}
+
+.card
+{
+	width: 125px;
+	height: 125px;
+	display: inline-block;
+	margin: 3px;
+	border: 4px solid #51c8b2;
+	border-radius: 4px;
+	cursor: pointer;
+	filter: brightness(70%);
+	transition: all .3s ease-in-out;
+}
+
+.card:hover
+{
+	border: 4px solid #e9b64a;
+	filter: brightness(100%);
+}
+
+.score
+{
+	margin-top: 5px;
+	letter-spacing: 2px;
+}
+*/
+.game-title {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 30px;
+}
+.score {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 30px;
+}
+.wrapper {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+  }
+  
+  .login {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #6441A5;
+	background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
+	background: linear-gradient(to right, #2a0845, #6441A5);
+	height: 60vh;
+	width: 40vw;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+	box-shadow: 2px 1px 6px 1px gray;
+  }
+  .GameForm > label {
+	color: white;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+  }
+  .form-group > label:nth-child(1) {
+	color: white;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+  }
+  .form-text {
+	color: white;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+  }
+  .form-control {
+	width: 80%;  
+	margin: 25px 2px 25px 2px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 25px;
+	box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+	0 5px 15px 0 rgba(0,0,0,0.08);
+	background-color: #ffffff;
+	border-radius: 0.5rem;
+	border-left: 1px solid #414141;
+	transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+  }
+  .GameForm > button {
+	display: flex;
+    width: 100%;
+    height: 4em;
+    align-items: center;
+    justify-content: center;
+    font-weight:  lighter;
+    font-size: 1.rem;
+    background-color: #6441A5;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+	font-size: 1.0em;
+	box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+	0 5px 15px 0 rgba(0,0,0,0.08);
+	border-radius: 0.5rem;
+	border-left: 1px solid #414141;
+	transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+  }
+  .GameForm > button:hover {
+	background-color: #5b3a99;
+	color: rgb(231, 228, 228);
+  }
+  .GameForm > button:active {
+    background-color: #422872;
+    box-shadow: 1px 1px 1px 0px #2c1a4d;
+    transition: all 0.3s ease 0s;
+    color: white;
+  }
+  .navbar {
+	display: flex;
+	flex: 1;
+	box-shadow: 4px 4px 6px gray;
+	align-items: center;
+  }
+  
+  .game {
+	display: flex;
+	height: 85vh;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .images {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 650px;
+	width: 670px;
+	box-shadow: 4px 4px 10px gray;
+  }
+  .image {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	height: 120px;
+	width: 120px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px black;
+	padding: 10px;
+	margin: 10px;
+  }
+  .image:hover {
+	box-shadow: 2px 2px 3px rgb(44, 44, 44);
+  }
+  .image-blank {
+	background: url("../img/karta.png") !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	height: 120px;
+	width: 120px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px black;
+	padding: 10px;
+	margin: 10px;
+  }
+  
+  .end-game {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .message {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 60vh;
+	width: 40vw;
+	background: white;
+	box-shadow: 12px 12px 10px gray;
+	background: #6441A5;
+	background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
+	background: linear-gradient(to right, #2a0845, #6441A5);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+	box-shadow: 2px 1px 6px 1px gray;
+  }
+  .btn {
+	display: flex;
+    width: 40vh;
+    height: 4em;
+    align-items: center;
+    justify-content: center;
+    background-color: #6441A5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+	font-size: 1.0em;
+	box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+	0 5px 15px 0 rgba(0,0,0,0.08);
+	border-radius: 0.5rem;
+	border: 1px solid #414141;
+	transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;  
+  }
+  .btn:hover {
+	background-color: #5b3a99;
+	color: rgb(231, 228, 228);
+  }
+  .btn:active {
+	background-color: #422872;
+    box-shadow: 1px 1px 1px 0px #2c1a4d;
+    transition: all 0.3s ease 0s;
+    color: white;
+  }
+  @media only screen and (max-width: 600px) {
+	.images {
+		flex-direction: row;
+	}
+	.image {
+	  height: 100px;
+	  width: 110px;
+	  margin: 5px;
+	}
+	.message {
+	  width: 400px;
+	}
+	.login {
+	  width: 400px;
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

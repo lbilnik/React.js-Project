@@ -1,0 +1,153 @@
+/* Position and sizing of burger button */
+.menuWraper {
+  display: none;
+  float: right;
+}
+
+.bm-burger-button {
+    display: none;
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+    margin-top: 13px;
+    margin-right: 10px;
+  }
+ 
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #86a517;
+  }
+  
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 26px;
+    width: 26px;
+    float: left;
+    margin-right: 10px;
+  }
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    
+    position: fixed;
+    background-color: #472b7c;
+    margin-top: 0px;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #6441A5;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+    0 5px 15px 0 rgba(0,0,0,0.08);
+    border-radius: 0.5rem;
+    border-left: 0 solid #6441A5;
+    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    max-height: 100%;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #ffffff;
+    padding: 0.8em;
+    text-decoration-line: none;
+    margin-right: 50px;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+  }
+  
+  .bm-item-list {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+
+  }
+  .bm-item-list > ul > li > a {
+    color: #ffffff;
+    text-decoration-line: none;
+    text-decoration: none;
+    text-align: center;
+  }
+  /* Individual item */
+  .bm-item > li {
+    color: #fff;
+	  display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    text-decoration-line: none;
+    margin: auto;
+    font-size: 20px;
+  }
+  #menuElement1:hover > a:nth-child(1) {
+    text-shadow: 0 0 0.4em #FFF, 0 0 0.4em #FFF,
+    0 0 0.4em #FFF;   
+  }
+  #menuElement2:hover > a:nth-child(1) {
+    text-shadow: 0 0 0.4em #FFF, 0 0 0.4em #FFF,
+    0 0 0.4em #FFF;   
+  }
+  #menuElement3:hover > a:nth-child(1){
+    text-shadow: 0 0 0.4em #FFF, 0 0 0.4em #FFF,
+    0 0 0.4em #FFF; 
+  }
+  #menuElement4:hover > a:nth-child(1) {
+    text-shadow: 0 0 0.4em #FFF, 0 0 0.4em #FFF,
+    0 0 0.4em #FFF;
+  }
+  #menuElement5:hover > a:nth-child(1) {
+    text-shadow: 0 0 0.4em #FFF, 0 0 0.4em #FFF,
+    0 0 0.4em #FFF;   
+  }
+  #menuElement6:hover > a:nth-child(1) {
+    text-shadow: 0 0 0.4em #FFF, 0 0 0.4em #FFF,
+    0 0 0.4em #FFF;   
+  }
+  #menuElement7:hover > a:nth-child(1) {
+    text-shadow: 0 0 0.4em #FFF, 0 0 0.4em #FFF,
+    0 0 0.4em #FFF;   
+  }
+
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .current-menu-item{
+    font-weight: 600;
+	text-shadow: 0 0 0.6em #86a517, 0 0 0.6em #86a517,
+        0 0 0.6em #86a517;
+  }
+  @media only screen and (max-width: 1179px) {
+    .menuWraper {
+      display: flex;
+    }
+  
+    .bm-burger-button{
+    display: flex;
+    left: 85%;
+  }
+
+  }
