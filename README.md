@@ -11,6 +11,7 @@ Jeżeli klonujesz projekt i chcesz go odpalić lokalnie użyj npm start w visual
 
 Projekt można obecnie przetestować na http://www.react-project.cba.pl
 
+
 ---------------------------- EN  ------------------------------------
 
 Three applications created in react.js as one project
