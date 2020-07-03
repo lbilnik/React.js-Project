@@ -1,8 +1,10 @@
 # React.js-Project
 Trzy Aplikacje stworzone w React.js jako jeden projekt
 
-1 Gra w zapamiętywanie - Memory Game 
+1 Gra w zapamiętywanie - Memory Game
+
 2 Kalkulator 
+
 3 Memo Generator - z czasem zostanie dodana nowa funkcjonalność
 
 Projekt wyświetla stronę, na której można zagrać w grę lub po przez routing przechodzić pomiędzy innymi aplikacjami.
