@@ -1,5 +1,6 @@
 # React.js-Project
-Trzy Aplikacje stworzone w React.js jako jeden projekt
+Trzy Aplikacje stworzone w React.js jako jeden projekt.
+Każda aplikacja składa się z własnych komponentów src/components/
 
 1 Gra w zapamiętywanie - Memory Game
 
